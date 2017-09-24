@@ -1,0 +1,13 @@
+{
+  "permissions": [],
+  "application": [
+    {
+      "title": "Test listener",
+      "description": "Description of test listener",
+      "entry": "testListener.activate"
+    }
+  ],
+  "externally_connectable": {
+    "matches": ["*://*.example.com/*"]
+  }
+}
