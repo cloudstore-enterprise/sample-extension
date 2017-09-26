@@ -2,12 +2,18 @@
   "permissions": [],
   "application": [
     {
-      "title": "Test listener",
-      "description": "Description of test listener",
-      "entry": "testListener.activate"
+      "name": "testListener",
+      "entry": "testListener:activate",
+      "meta": {
+        "title": "Test extension",
+        "description": "Test description"
+      },
+      "externals": [
+        {
+          "type": "incoming",
+          "matches": ["*://*.example.com/*"]
+        }
+      ]
     }
-  ],
-  "externally_connectable": {
-    "matches": ["*://*.example.com/*"]
-  }
+  ]
 }
