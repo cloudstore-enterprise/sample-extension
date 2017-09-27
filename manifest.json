@@ -1,5 +1,9 @@
 {
   "permissions": [],
+  "meta": {
+    "title": "CloudStore Emailer",
+    "description": "Default extension from CloudStore for sending email messages."
+  },
   "application": [
     {
       "name": "testListener",
@@ -14,6 +18,10 @@
           "matches": ["*://*.example.com/*"]
         }
       ]
+    },
+    {
+      "name": "default",
+      "inputSchema": {}
     }
   ]
 }
